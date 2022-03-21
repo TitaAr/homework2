@@ -1,0 +1,47 @@
+//exercice1:
+var obj1= {
+    firstName:"tita",
+    lastName: "arous",
+    age: 19,
+    discord: "tita#5314",
+}
+var obj2= {
+    firstName:"maria",
+    lastName: "toua",
+    age: 19,
+    discord: "MaRia#6748",
+}
+function check(obj1,obj2)
+{
+    var result;
+    for (var key in obj2) 
+    { 
+        if ( obj1[key] !== obj2[key])
+        {
+            result=false;
+        }
+        else{ result=true;}
+     return result ;
+    }
+}
+console.log(check(obj1,obj2));
+//exercice2:
+var array1=[1,2,3],
+    array2=[100,2,1,10];
+function difference(array1,array2)
+{
+    var common=[];
+for (var i=0; i <array1.length;i++)
+{
+    for(var j=0;j<array2.length;j++)
+    {
+        if (array1[i]==array2[j])
+        {
+            common.push(array1[i]);
+           
+        }   
+    }
+}
+return common;
+}
+console.log(difference(array1,array2));
